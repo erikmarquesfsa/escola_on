@@ -23,52 +23,47 @@
                 <form class="row g-3">
                   <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" name="email" class="form-control" id="inputEmail4">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
+                    <label for="inputPassword4" class="form-label">Nome</label>
+                    <input type="text" name="nome" class="form-control" id="inputPassword4">
                   </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  <div class="col-4">
+                    <label for="inputAddress" class="form-label">CEP</label>
+                    <input type="text" name="cep" class="form-control">
                   </div>
-                  <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                  <div class="col-8">
+                    <label for="inputAddress2" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress2" disabled name="endereco">
                   </div>
                   <div class="col-md-4">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
-                      <option selected>Choose...</option>
-                      <option>...</option>
+                    <label for="inputCity" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="inputCity" disabled name="bairro">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" disabled name="cidade">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputZip" class="form-label">Função</label>
+                    <select name="funcao" class="form-control">
+                      <option value="">-</option>
+                      <option value="Professor">Professor</option>
+                      <option value="Secretaria">Secretaria</option>
+                      <option value="Limpeza">Limpeza</option>
+                      <option value="Merenda">Merenda</option>
                     </select>
                   </div>
-                  <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
                   <div class="col-12">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck">
-                      <label class="form-check-label" for="gridCheck">
-                        Check me out
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
                   </div>
                 </form>
               </div>
               <div class="card-footer ">
                 <hr>
                 <div class="stats">
-                  <i class="fa fa-history"></i> texto
+                  <i class="fa fa-history"></i> Cadastro de Funcionários
                 </div>
               </div>
             </div>
