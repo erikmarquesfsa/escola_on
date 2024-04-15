@@ -31,19 +31,19 @@
                   </div>
                   <div class="col-4">
                     <label for="inputAddress" class="form-label">CEP</label>
-                    <input type="text" name="cep" class="form-control">
+                    <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);"  class="form-control">
                   </div>
                   <div class="col-8">
                     <label for="inputAddress2" class="form-label">Endereço</label>
-                    <input type="text" class="form-control" id="inputAddress2" disabled name="endereco">
+                    <input type="text" class="form-control"  id="rua" disabled name="endereco">
                   </div>
                   <div class="col-md-4">
                     <label for="inputCity" class="form-label">Bairro</label>
-                    <input type="text" class="form-control" id="inputCity" disabled name="bairro">
+                    <input type="text" id="bairro" class="form-control" disabled name="bairro">
                   </div>
                   <div class="col-md-4">
                     <label for="inputCity" class="form-label">Cidade</label>
-                    <input type="text" class="form-control" id="inputCity" disabled name="cidade">
+                    <input type="text" id="cidade"  class="form-control" disabled name="cidade">
                   </div>
                   <div class="col-md-4">
                     <label for="inputZip" class="form-label">Função</label>
