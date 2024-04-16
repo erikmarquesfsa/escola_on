@@ -20,34 +20,34 @@
                 <p class="card-category">Preencha os campos</p>
               </div>
               <div class="card-body ">
-                <form class="row g-3">
+                <form class="row g-3" method="post" action="../_scripts/salvar_cad_pessoais.php">
                   <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail4">
+                    <input type="email" name="email" required class="form-control" id="inputEmail4">
                   </div>
                   <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Nome</label>
-                    <input type="text" name="nome" class="form-control" id="inputPassword4">
+                    <label for="inputPassword4"  class="form-label">Nome</label>
+                    <input type="text" name="nome" required class="form-control" id="inputPassword4">
                   </div>
                   <div class="col-4">
-                    <label for="inputAddress" class="form-label">CEP</label>
-                    <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);"  class="form-control">
+                    <label for="inputAddress"  class="form-label">CEP</label>
+                    <input type="text" name="cep" required id="cep" onblur="pesquisacep(this.value);"  class="form-control">
                   </div>
                   <div class="col-8">
                     <label for="inputAddress2" class="form-label">Endereço</label>
-                    <input type="text" class="form-control"  id="rua" disabled name="endereco">
+                    <input type="text" class="form-control"  name="endereco"  id="rua" readonly>
                   </div>
                   <div class="col-md-4">
                     <label for="inputCity" class="form-label">Bairro</label>
-                    <input type="text" id="bairro" class="form-control" disabled name="bairro">
+                    <input type="text" name="bairro" id="bairro" class="form-control" readonly >
                   </div>
                   <div class="col-md-4">
                     <label for="inputCity" class="form-label">Cidade</label>
-                    <input type="text" id="cidade"  class="form-control" disabled name="cidade">
+                    <input type="text" id="cidade" name="cidade" class="form-control" readonly >
                   </div>
                   <div class="col-md-4">
                     <label for="inputZip" class="form-label">Função</label>
-                    <select name="funcao" class="form-control">
+                    <select name="funcao" required class="form-control">
                       <option value="">-</option>
                       <option value="Professor">Professor</option>
                       <option value="Secretaria">Secretaria</option>
