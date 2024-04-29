@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 16-Abr-2024 às 00:39
+-- Tempo de geração: 30-Abr-2024 às 00:08
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -20,6 +20,39 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `escola_on`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `cad_pessoais`
+--
+
+CREATE TABLE `cad_pessoais` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `cep` varchar(12) DEFAULT NULL,
+  `endereco` varchar(200) DEFAULT NULL,
+  `bairro` varchar(150) DEFAULT NULL,
+  `cidade` varchar(150) DEFAULT NULL,
+  `funcao` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `cad_pessoais`
+--
+
+INSERT INTO `cad_pessoais` (`id`, `nome`, `email`, `cep`, `endereco`, `bairro`, `cidade`, `funcao`) VALUES
+(1, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', '', '', '', 'Professor'),
+(2, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', '', '', '', 'Professor'),
+(3, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', '', '', '', 'Professor'),
+(4, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', '', '', '', 'Professor'),
+(5, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', '', '', '', 'Professor'),
+(6, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', 'Rua Ipuaçu', 'Campo Limpo', 'Feira de Santana', 'Professor'),
+(7, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', 'Rua Ipuaçu', 'Campo Limpo', 'Feira de Santana', 'Professor'),
+(8, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', 'Rua Ipuaçu', 'Campo Limpo', 'Feira de Santana', 'Professor'),
+(9, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', 'Rua Ipuaçu', 'Campo Limpo', 'Feira de Santana', 'Professor'),
+(10, 'Erik', 'erikmarquesfsa@gmail.com', '44034-056', 'Rua Ipuaçu', 'Campo Limpo', 'Feira de Santana', 'Professor');
 
 -- --------------------------------------------------------
 
@@ -46,6 +79,12 @@ INSERT INTO `login` (`id`, `nome`, `senha`, `funcao`) VALUES
 --
 
 --
+-- Índices para tabela `cad_pessoais`
+--
+ALTER TABLE `cad_pessoais`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `login`
 --
 ALTER TABLE `login`
@@ -54,6 +93,12 @@ ALTER TABLE `login`
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `cad_pessoais`
+--
+ALTER TABLE `cad_pessoais`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `login`
