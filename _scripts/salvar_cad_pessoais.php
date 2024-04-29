@@ -24,6 +24,10 @@ if($query){?>
                     title: "Sucesso!",
                     text: "Cadastro Realizado com Sucesso.",
                     icon: "success"
+                    }).then(okay => {
+                        if(okay){
+                            window.location.href = "../template/list_func.php";
+                        }
                     });
             </script>
                 
