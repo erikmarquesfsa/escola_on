@@ -45,7 +45,9 @@
                                             <td><?php echo $dados['cep']; ?></td>
                                             <td><?php echo $dados['cidade']; ?></td>
                                             <td><?php echo $dados['funcao']; ?></td>
-                                            <td><i class="fa-regular fa-pen-to-square"></i> | <i class="fa-solid fa-trash-can"></i></td>
+                                            <td><a href="edit_dados_pessoais.php?d=<?php echo $dados['id']; ?> "><i class="fa-regular fa-pen-to-square"></i></a> |
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
