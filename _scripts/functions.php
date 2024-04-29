@@ -8,4 +8,13 @@ function dadosUser($login){
     return ($dados['nome']);
 }
 
+function dadosAlterarUsuario($id){
+    include "config.php";
+    $sql = "SELECT * FROM cad_pessoais WHERE id = '$id'";
+    $query = $mysqli->query($sql);
+    $dados = $query->fetch_array();
+
+    return ($dados);
+}
+
 ?>
