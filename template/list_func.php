@@ -28,6 +28,7 @@
                                             <th>CEP</th>
                                             <th>Cidade</th>
                                             <th>Função</th>
+                                            <th>&nbsp;</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -44,6 +45,7 @@
                                             <td><?php echo $dados['cep']; ?></td>
                                             <td><?php echo $dados['cidade']; ?></td>
                                             <td><?php echo $dados['funcao']; ?></td>
+                                            <td><i class="fa-regular fa-pen-to-square"></i> | <i class="fa-solid fa-trash-can"></i></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
@@ -54,6 +56,7 @@
                                             <th>CEP</th>
                                             <th>Cidade</th>
                                             <th>Função</th>
+                                            <th>&nbsp;</th>
                                         </tr>
                                     </tfoot>
                                 </table>
