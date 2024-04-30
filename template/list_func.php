@@ -46,7 +46,9 @@
                                             <td><?php echo $dados['cidade']; ?></td>
                                             <td><?php echo $dados['funcao']; ?></td>
                                             <td><a href="edit_dados_pessoais.php?d=<?php echo $dados['id']; ?> "><i class="fa-regular fa-pen-to-square"></i></a> |
-                                                <i class="fa-solid fa-trash-can"></i>
+                                                <a href="../_scripts/deletar_cad_pessoais.php?id=<?php echo $dados['id']; ?> ">
+                                                    <i class="fa-solid fa-trash-can"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <?php } ?>
